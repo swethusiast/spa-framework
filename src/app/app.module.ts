@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FwModule } from 'src/fw/fw.module';
+import { FwModule } from 'src/app/fw/fw.module';
 
 @NgModule({
   declarations: [AppComponent],

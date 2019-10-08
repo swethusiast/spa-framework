@@ -1,0 +1,11 @@
+<a *ngFor="let icon of frameworkConfigService.socialIcons" [href]="icon.link" [title]="icon.alt">
+  <!-- <img [src]="icon.imageFile" [alt]="icon.alt"> -->
+</a>
+
+<div *ngIf="frameworkConfigService.showLanguageSelector">
+  <!-- <img class="flag-image" src="assets/flag.png" alt="flag"> -->
+  <span>EG</span><i class="fa fa-chevron-down"></i>
+</div>
+<div *ngIf="frameworkConfigService.showUserControls">
+  <span>Sign In</span>
+</div>

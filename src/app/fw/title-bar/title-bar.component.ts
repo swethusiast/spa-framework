@@ -1,15 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'fw-title-bar',
+  selector: 'app-title-bar',
   templateUrl: './title-bar.component.html',
-  styleUrls: ['./title-bar.component.scss']
+  styleUrls: ['./title-bar.component.scss'],
 })
 export class TitleBarComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

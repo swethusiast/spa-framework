@@ -1,7 +1,7 @@
 import {
   FrameworkConfigService,
   FrameworkConfigSettings,
-} from './../fw/services/framework-config.service';
+} from './fw/services/framework-config.service';
 import { Component } from '@angular/core';
 
 @Component({
