@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FrameworkBodyComponent } from './framework-body/framework-body.component';
-import { ContentComponent } from './content/content.component';
-import { TitleBarComponent } from './title-bar/title-bar.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
+import { StatusBarComponent } from './components/status-bar/status-bar.component';
+import { FrameworkBodyComponent } from './components/framework-body/framework-body.component';
+import { ContentComponent } from './components/content/content.component';
+import { TitleBarComponent } from './components/title-bar/title-bar.component';
+import { TopBarComponent } from './components/top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -11,6 +12,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ContentComponent,
     TitleBarComponent,
     TopBarComponent,
+    StatusBarComponent,
   ],
   imports: [CommonModule],
   exports: [FrameworkBodyComponent],
