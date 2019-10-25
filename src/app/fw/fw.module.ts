@@ -5,6 +5,10 @@ import { FrameworkBodyComponent } from './components/framework-body/framework-bo
 import { ContentComponent } from './components/content/content.component';
 import { TitleBarComponent } from './components/title-bar/title-bar.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
+import { ScreenBelowLargeDirective } from './directives/screen-below-large.directive';
+import { ScreenLargeDirective } from './directives/screen-large.directive';
+import { MenuComponent } from './components/menus/menu/menu.component';
+import { MenuItemComponent } from './components/menus/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +17,10 @@ import { TopBarComponent } from './components/top-bar/top-bar.component';
     TitleBarComponent,
     TopBarComponent,
     StatusBarComponent,
+    ScreenBelowLargeDirective,
+    ScreenLargeDirective,
+    MenuComponent,
+    MenuItemComponent,
   ],
   imports: [CommonModule],
   exports: [FrameworkBodyComponent],

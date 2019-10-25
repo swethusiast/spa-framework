@@ -1,13 +1,14 @@
-<div *ngIf="!screenService.isLarge()" class="title-bar-small">
+<div *screenBelowLarge class="title-bar-small">
   humburger icon
   <div class="small-image-holder">
     <!-- <img class="small-image" src="assets/logo.png" alt=""> -->
   </div>
   option icon
 </div>
-<div *ngIf="screenService.isLarge()" class="title-bar">
+<div *screenLarge class="title-bar">
   <!-- <img src="assets/logo.png" alt=""> -->
   <div class="menu-area">
     <app-top-bar></app-top-bar>
+    <app-menu></app-menu>
   </div>
 </div>

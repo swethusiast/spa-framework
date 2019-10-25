@@ -1,0 +1,17 @@
+:host {
+  display: inline-block;
+  position: relative;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+  cursor: pointer;
+
+  span {
+    pointer-events: none;
+  }
+
+  &:not(.parent-is-popup) {
+    margin-left: 16px;
+    width: auto;
+  }
+}
