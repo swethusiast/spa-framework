@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StatusBarComponent } from './components/status-bar/status-bar.component';
@@ -22,7 +23,7 @@ import { MenuItemComponent } from './components/menus/menu-item/menu-item.compon
     MenuComponent,
     MenuItemComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   exports: [FrameworkBodyComponent],
 })
 export class FwModule {}
