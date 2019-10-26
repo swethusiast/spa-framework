@@ -11,6 +11,12 @@ export interface MenuItem {
 })
 export class MenuService {
   items: MenuItem[];
-  isVertical = true;
+  isVertical = false;
+  showingLeftSideMenu = false;
   constructor() {}
+  toggleLeftSideMenu(): void {
+    this.isVertical = true;
+
+    this.showingLeftSideMenu = !this.showingLeftSideMenu;
+  }
 }

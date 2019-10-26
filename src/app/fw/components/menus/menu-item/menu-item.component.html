@@ -1,5 +1,5 @@
 <div class="menu-item" [routerLink]="item.route" routerLinkActive="active"
-  [ngClass]="{'vertical-menu': menuService.isVertical}">
+  [ngClass]="{'vertical-menu': menuService.isVertical}" (click)="menuService.showingLeftSideMenu = false">
   <i [class]="item.icon"></i>
   <span>{{ item.text.toUpperCase() }}</span>
 </div>
