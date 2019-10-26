@@ -1,14 +1,17 @@
 <div *screenBelowLarge class="title-bar-small">
-  humburger icon
+  <i class="fa fa-bars" aria-hidden="true"></i>
   <div class="small-image-holder">
     <!-- <img class="small-image" src="assets/logo.png" alt=""> -->
+    <i class="fa fa-linux" aria-hidden="true"></i>
+    Logo
   </div>
-  option icon
+  <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 </div>
 <div *screenLarge class="title-bar">
-  <!-- <img src="assets/logo.png" alt=""> -->
+  <i class="fa fa-linux" aria-hidden="true"></i>
+  Logo
   <div class="menu-area">
     <app-top-bar></app-top-bar>
-    <app-menu></app-menu>
+    <app-menu *ngIf="!menuService.isVertical"></app-menu>
   </div>
 </div>

@@ -11,5 +11,6 @@ export interface MenuItem {
 })
 export class MenuService {
   items: MenuItem[];
+  isVertical = true;
   constructor() {}
 }
